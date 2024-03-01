@@ -8,13 +8,13 @@ O corpo do método mensagemDoDia() retorna a mensagem “hoje é” mais o dia c
 
 A classe Contexto, ela apenas tem como objetivo colocar toda essa lógica em um método que tem como parâmetro uma variável do tipo Estrategia.
 
-# Interface Estrategia
+## Interface Estrategia
 ````
 public interface Estrategia {
   public String mensagemDoDia();
 }
 ````
-# Classe EstrategiaConcreta
+## Classe EstrategiaConcreta
 ````
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -30,7 +30,7 @@ public class EstrategiaConcreta implements Estrategia {
   }
 }
 ````
-#Classe Contexto
+## Classe Contexto
 ````
 public class Contexto {
   public String mensagemDoDia(Estrategia m){
@@ -38,5 +38,7 @@ public class Contexto {
   }
 }
 ````
-# Diagrama do código
-![image](https://github.com/GustavoAnjos99/Padrao-Strategy-java/assets/132578544/176aa045-c515-4437-b60c-61adcd2705a1)
+## Diagrama do código
+![image](https://github.com/GustavoAnjos99/Padrao-Strategy-java/assets/132578544/f4cbaabd-af42-47d5-a89e-7d4ab01ebf05)
+
+
